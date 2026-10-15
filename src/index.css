@@ -1,0 +1,440 @@
+body {
+  background-color: #f5f5f5;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  border-bottom: 1px solid darkgray;
+  padding: 5px;
+  max-height: 50px;
+}
+
+.header > .first {
+  justify-self: start;
+}
+
+.header > .second {
+  justify-self: center;
+}
+
+.header > .third {
+  justify-self: end;
+}
+
+body {
+  font-family: 'Roboto';
+}
+
+.login-pg-img {
+  width: 650px;
+  height: 700px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin: 15px;
+}
+
+.login-pg-div {
+  display: flex;
+  align-items: center; 
+}
+
+.card-like-div-login {
+  border-radius: 12px;
+  border: 1px solid darkgray;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+}
+
+.whole-login-sect {
+  margin-left: 150px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.bankid {
+  background: #111;
+  color: white;
+}
+
+.digipass {
+  background: #ebebeb;
+  color: #111;
+}
+
+.payment-button {
+  background: #111;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 8px 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  height: 35px;
+}
+
+.change-button {
+  background-color: #ebebeb;
+  color: #111;
+  border: none;
+  border-radius: 999px;
+  padding: 8px 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  height: 35px;
+  width: fit-content;
+}
+
+.account-info {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.account-open::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 6px;
+}
+
+.account-open:hover::after {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.account-open:focus-visible::after {
+  outline: 2px solid #333;
+  outline-offset: 2px;
+}
+
+.private-account-page {
+  max-width: 1000px;
+  margin: 48px auto;
+  padding: 0 24px;
+}
+
+.account-back {
+  margin-bottom: 24px;
+  color: #245f88;
+}
+
+.private-account-page h1 {
+  font-size: 26px;
+  font-weight: 500;
+  margin: 0 0 8px;
+}
+
+.account-number {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.account-balance {
+  font-size: 30px;
+  margin: 8px 0 32px;
+}
+
+.account-transactions {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.account-transactions h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.transaction-note {
+  color: #666;
+  font-size: 12px;
+  margin-bottom: 24px;
+}
+
+.transaction-table-scroll {
+  overflow-x: auto;
+}
+
+.account-transactions table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.account-transactions th {
+  background: #222;
+  color: white;
+  font-weight: 500;
+}
+
+.account-transactions th,
+.account-transactions td {
+  padding: 14px 12px;
+  text-align: left;
+  white-space: nowrap;
+  border-bottom: 1px solid #eee;
+}
+
+.account-transactions th:nth-last-child(-n+2),
+.account-transactions td:nth-last-child(-n+2) {
+  text-align: right;
+}
+
+.account-info h4 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.account-info p {
+  font-size: 13px;
+  margin: 0;
+}
+
+.account-info img {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+}
+
+.favorite-accounts-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.favorite-accounts-card {
+  background-color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.tasks-card {
+  background-color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.fv-card-bottom-btn-set {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 25px;
+}
+
+.text-button {
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  align-items: center;
+  display: inline-flex;
+  gap: 10px;
+}
+
+.side-menu {
+  position: fixed;
+  top: 60px; /* match your header's height */
+  left: 8px;
+  bottom: 8px;
+  width: 250px;
+  max-width: calc(100vw - 16px);
+  box-sizing: border-box;
+  padding: 8px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  overflow-y: auto;
+}
+
+.side-menu nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 14px 12px;
+  background: none;
+  border: none;
+  border-radius: 6px;
+  color: #222;
+  font: inherit;
+  font-size: 13px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.menu-item.active,
+.menu-item:hover {
+  background: #ebebeb;
+}
+
+.profile-menu {
+  left: auto;
+  right: 8px;
+  width: 300px;
+}
+
+.profile-summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  font-size: 12px;
+}
+
+.profile-summary p {
+  margin: 3px 0 0;
+}
+
+.profile-initials {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #f0f0f0;
+}
+
+.profile-close {
+  margin-left: auto;
+  font-size: 24px;
+}
+
+.profile-backdrop {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: none;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 99;
+}
+
+.transfer-dialog {
+  width: 570px;
+  max-width: calc(100vw - 32px);
+  max-height: calc(100dvh - 32px);
+  box-sizing: border-box;
+  overflow-y: auto;
+  border: none;
+  border-radius: 12px;
+  padding: 24px;
+  background: white;
+  color: #111;
+  font-family: inherit;
+}
+
+.transfer-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.transfer-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+.transfer-heading h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.transfer-heading button {
+  font-size: 24px;
+}
+
+.transfer-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 12px;
+}
+
+.transfer-fields label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  font-size: 12px;
+}
+
+.transfer-fields input,
+.transfer-fields select {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  background: #ebebeb;
+  color: #111;
+  font: inherit;
+}
+
+.transfer-fields select {
+  min-height: 54px;
+}
+
+.transfer-hint {
+  align-self: flex-end;
+  font-size: 11px;
+  color: #555;
+}
+
+.transfer-demo-note {
+  margin: 24px 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.transfer-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  border-top: 1px solid #eee;
+  padding-top: 16px;
+}
+
+.transfer-actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+  .transfer-fields {
+    grid-template-columns: 1fr;
+  }
+}
+
